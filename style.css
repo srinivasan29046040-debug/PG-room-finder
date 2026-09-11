@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* Navigation */
+
+header {
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/* Hero */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Search */
+
+.search-box {
+    background: white;
+
+    max-width: 900px;
+    margin: auto;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.search-box input,
+.search-box select {
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    flex: 1;
+
+    min-width: 180px;
+}
+
+button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Properties */
+
+#properties {
+
+    padding: 60px 8%;
+}
+
+#properties h2,
+.add-section h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+.property-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* Property Card */
+
+.property-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.property-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.property-card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.property-info {
+
+    padding: 20px;
+}
+
+.property-info h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.location {
+
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+.rent {
+
+    color: #16a34a;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.type {
+
+    display: inline-block;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Add Property */
+
+.add-section {
+
+    background: white;
+
+    padding: 60px 8%;
+}
+
+#propertyForm {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+#propertyForm input,
+#propertyForm select {
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+}
+
+
+/* Footer */
+
+footer {
+
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav a {
+
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+
+        font-size: 30px;
+    }
+
+}

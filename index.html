@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PG & Room Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">🏠 PG Finder</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#addProperty">Add Property</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Find Your Perfect PG or Room</h1>
+
+        <p>
+            Search affordable PGs and rooms near your location.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="locationSearch"
+                placeholder="Enter location..."
+            >
+
+            <select id="roomType">
+
+                <option value="all">
+                    All Room Types
+                </option>
+
+                <option value="Single">
+                    Single Room
+                </option>
+
+                <option value="Double">
+                    Double Room
+                </option>
+
+                <option value="Shared">
+                    Shared Room
+                </option>
+
+            </select>
+
+            <input
+                type="number"
+                id="maxRent"
+                placeholder="Maximum rent"
+            >
+
+            <button onclick="searchProperties()">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Properties -->
+    <section id="properties">
+
+        <h2>Available PGs & Rooms</h2>
+
+        <div id="propertyContainer" class="property-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- Add Property -->
+    <section id="addProperty" class="add-section">
+
+        <h2>Add Your PG / Room</h2>
+
+        <form id="propertyForm">
+
+            <input
+                type="text"
+                id="propertyName"
+                placeholder="PG / Room Name"
+                required
+            >
+
+            <input
+                type="text"
+                id="propertyLocation"
+                placeholder="Location"
+                required
+            >
+
+            <input
+                type="number"
+                id="propertyRent"
+                placeholder="Monthly Rent"
+                required
+            >
+
+            <select id="propertyType" required>
+
+                <option value="">
+                    Select Room Type
+                </option>
+
+                <option value="Single">
+                    Single
+                </option>
+
+                <option value="Double">
+                    Double
+                </option>
+
+                <option value="Shared">
+                    Shared
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Add Property
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 PG Finder | Find rooms easily
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
